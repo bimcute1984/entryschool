@@ -80,7 +80,7 @@ include "../pages/backend/connectDB.php";
                             <span class="round-8 bg-primary rounded-circle me-2 d-inline-block"></span>
                             <span class="fs-2">ปีการศึกษา 2566</span>
                             <span class="round-8 bg-light-primary rounded-circle me-2 d-inline-block"></span>
-                            <span class="fs-2">17,790 คน</span>
+                            <span class="fs-2">189000000 คน</span>
                           </div>
                           </div>
                         <br>
