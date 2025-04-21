@@ -64,7 +64,7 @@
               <span class="hide-menu">ระบบบริหารจัดการข้อมูลแนะแนวการศึกษาต่อ</span>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+              <a class="sidebar-link" href="./GuildanceTable.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
