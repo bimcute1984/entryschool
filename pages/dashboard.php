@@ -189,25 +189,25 @@ include "../pages/backend/connectDB.php";
           <div class="col-lg-8 d-flex align-items-stretch">
             <div class="card w-100">
               <div class="card-body p-4">
-                <h5 class="card-title fw-semibold mb-4">Recent Transactions</h5>
+                <h5 class="card-title fw-semibold mb-4">TOP 3 โรงเรียนที่มีผู้สมัครมากที่สุด </h5>
                 <div class="table-responsive">
                   <table class="table text-nowrap mb-0 align-middle">
                     <thead class="text-dark fs-4">
                       <tr>
                         <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Id</h6>
+                          <h6 class="fw-semibold mb-0">ลำดับ</h6>
                         </th>
                         <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Assigned</h6>
+                          <h6 class="fw-semibold mb-0">ชื่อโรงเรียน</h6>
                         </th>
                         <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Name</h6>
+                          <h6 class="fw-semibold mb-0">จังหวัด</h6>
                         </th>
                         <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Priority</h6>
+                          <h6 class="fw-semibold mb-0">ลำดับ</h6>
                         </th>
                         <th class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0">Budget</h6>
+                          <h6 class="fw-semibold mb-0">จำนวนผู้สมัคร</h6>
                         </th>
                       </tr>
                     </thead>
@@ -215,29 +215,29 @@ include "../pages/backend/connectDB.php";
                       <tr>
                         <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                            <span class="fw-normal">Web Designer</span>                          
+                            <h6 class="fw-semibold mb-1">เบ็ญจะมะมหาราช</h6>
+                            <!--<span class="fw-normal">Web Designer</span>-->                      
                         </td>
                         <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">Elite Admin</p>
+                          <p class="mb-0 fw-normal">อุบลราชธานี</p>
                         </td>
                         <td class="border-bottom-0">
                           <div class="d-flex align-items-center gap-2">
-                            <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
+                            <span class="badge bg-primary rounded-3 fw-semibold">high</span>
                           </div>
                         </td>
                         <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
+                          <h6 class="fw-semibold mb-0 fs-4">289 คน</h6>
                         </td>
                       </tr> 
                       <tr>
                         <td class="border-bottom-0"><h6 class="fw-semibold mb-0">2</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                            <span class="fw-normal">Project Manager</span>                          
+                            <h6 class="fw-semibold mb-1">ลืมคำหาญวารินชำราบ</h6>
+                            <!--<span class="fw-normal">Project Manager</span> -->                         
                         </td>
                         <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">Real Homes WP Theme</p>
+                          <p class="mb-0 fw-normal">อุบลราชธานี</p>
                         </td>
                         <td class="border-bottom-0">
                           <div class="d-flex align-items-center gap-2">
@@ -245,45 +245,28 @@ include "../pages/backend/connectDB.php";
                           </div>
                         </td>
                         <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
+                          <h6 class="fw-semibold mb-0 fs-4">186 คน</h6>
                         </td>
                       </tr> 
                       <tr>
                         <td class="border-bottom-0"><h6 class="fw-semibold mb-0">3</h6></td>
                         <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                            <span class="fw-normal">Project Manager</span>                          
+                            <h6 class="fw-semibold mb-1">ยโสธรพิทยาสรรค์</h6>
+                            <!--<span class="fw-normal">Project Manager</span> -->                         
                         </td>
                         <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
+                          <p class="mb-0 fw-normal">ยโสธร</p>
                         </td>
                         <td class="border-bottom-0">
                           <div class="d-flex align-items-center gap-2">
-                            <span class="badge bg-danger rounded-3 fw-semibold">High</span>
+                            <span class="badge bg-danger rounded-3 fw-semibold">Low</span>
                           </div>
                         </td>
                         <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
+                          <h6 class="fw-semibold mb-0 fs-4">97 คน</h6>
                         </td>
                       </tr>      
-                      <tr>
-                        <td class="border-bottom-0"><h6 class="fw-semibold mb-0">4</h6></td>
-                        <td class="border-bottom-0">
-                            <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                            <span class="fw-normal">Frontend Engineer</span>                          
-                        </td>
-                        <td class="border-bottom-0">
-                          <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                        </td>
-                        <td class="border-bottom-0">
-                          <div class="d-flex align-items-center gap-2">
-                            <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
-                          </div>
-                        </td>
-                        <td class="border-bottom-0">
-                          <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
-                        </td>
-                      </tr>                       
+                                             
                     </tbody>
                   </table>
                 </div>
