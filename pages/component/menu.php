@@ -44,19 +44,19 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="2" aria-expanded="false">
+              <a class="sidebar-link" href="./Tmpselectdata3years.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">ภาพรวมการสมัคร</span>
+                <span class="hide-menu">ภาพรวมการสมัครรายคณะ</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="4" aria-expanded="false">
+              <a class="sidebar-link" href="./Appselectdata3years.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">ภาพรวมการยืนยันสิทธิ<br>เข้าศึกษา</span>
+                <span class="hide-menu">ภาพรวมการยืนยันสิทธิ<br>เข้าศึกษารายคณะ</span>
               </a>
             </li>
             <li class="nav-small-cap">
@@ -99,21 +99,14 @@
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">เว็บไซต์อื่นๆที่เกี่ยวข้อง</span>
               <li class="sidebar-item">
-              <a class="sidebar-link" href="https://admission.ubu.ac.th/admission/home" aria-expanded="false">
+              <a class="sidebar-link" href="../pages/aboutus.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-article"></i>
                 </span>
-                <span class="hide-menu">เว็บไซต์รับสมัคร</span>
+                <span class="hide-menu">เว็บไซต์ที่เกี่ยวข้อง</span>
               </a>
             </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="https://entry.ubu.ac.th/entryschool/pages/sign-in-school" aria-expanded="false">
-                <span>
-                  <i class="ti ti-alert-circle"></i>
-                </span>
-                <span class="hide-menu">ระบบบริหารจัดการโควตาโรงเรียน<br>และเครือข่าย</span>
-              </a>
-            </li>
+            
             <li class="sidebar-item">
               <a class="sidebar-link" href="https://www.ubu.ac.th/web/educational/content/%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%8D%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5%20%7C%20Bachelor%20Degree/" aria-expanded="false">
                 <span>

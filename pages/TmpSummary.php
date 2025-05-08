@@ -74,7 +74,9 @@ include "../pages/backend/connectDB.php";
               <div class="col-4">
                 <div class="mb-3">
                 <br>
-                  <button onclick="searchData();" type="button" class="btn btn-warning mt-2">ค้นหา</button>       
+                  <button onclick="searchData();" type="button" class="btn btn-warning mt-2">ค้นหา</button> 
+                  <a id="exportLink" href="#" target="_blank" class="btn btn-success mt-2 ms-2">Export Excel</a>
+      
                 </div>
 
 
@@ -122,6 +124,7 @@ include "../pages/backend/connectDB.php";
       // เก็บค่าจากฟอร์ม
       var year = $('#year').val();
       var Faculty = $('#Faculty').val();
+      document.getElementById('exportLink').href = `export_applicants.php?year=${year}`;
         $.ajax({
                       url: 'showdataTmpApp.php', // ไฟล์ PHP สำหรับตรวจสอบการล็อกอิน
                       method: 'POST',
