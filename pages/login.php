@@ -76,7 +76,11 @@
                                 confirmButtonText: 'ตกลง'
                             }).then(() => {
                                 // นำผู้ใช้ไปยังหน้าอื่นหลังจากล็อกอินสำเร็จ
+<<<<<<< HEAD
                                 window.location.href = 'dashboard.php';
+=======
+                                window.location.href = response.redirect;
+>>>>>>> 29b51cc (Test commit)
                             });
                         } else {
                             // แสดง SweetAlert2 สำหรับการล็อกอินไม่สำเร็จ

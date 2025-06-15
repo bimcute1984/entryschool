@@ -6,6 +6,7 @@ include "../pages/backend/connectDB.php";
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
   <?php
   include 'component/header.php';
   ?>
@@ -289,3 +290,140 @@ include "../pages/backend/connectDB.php";
 </body>
 
 </html>
+=======
+  <?php include 'component/header.php'; ?>
+</head>
+
+<body>
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical"
+       data-navbarbg="skin6" data-sidebartype="full"
+       data-sidebar-position="fixed" data-header-position="fixed">
+       
+    <?php 
+      include 'component/menu.php'; ?>
+      <div class="body-wrapper">
+
+    
+    <?php include 'component/navbar.php'; ?>
+    <br>
+<br> 
+<br>
+<br>
+
+    <div class="container mt-5">
+      <label for="yearSelect" class="form-label">เลือกปีการศึกษา:</label>
+      <select id="yearSelect" class="form-select w-auto mb-4">
+        <option value="2568">2568</option>
+        <option value="2567">2567</option>
+        <option value="2566">2566</option>
+      </select>
+
+      
+        <!-- กราฟหลัก -->
+        <div class="col-md-12 mb-4">
+          <div class="card shadow-sm rounded">
+            <div class="card-body">
+              <h5 class="card-title">จำนวนผู้ยืนยันสิทธิ์เข้าศึกษา จำแนกรายคณะ (3 ปีย้อนหลัง)</h5>
+              <canvas id="facultyBarChart" height="120"></canvas>
+            </div>
+          </div>
+        </div>
+
+       
+      
+
+      <div class="py-4 text-center">
+        <p class="mb-0 fs-5">Design & Developed by <a href="https://themewagon.com">UBU ES DEV</a></p>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const yearSelect = document.getElementById('yearSelect');
+      let mainChart, miniChart;
+
+      yearSelect.addEventListener('change', () => {
+        fetchMainChart(yearSelect.value);
+      });
+
+      function fetchMainChart(currentYear) {
+        const years = [parseInt(currentYear) - 2, parseInt(currentYear) - 1, parseInt(currentYear)];
+
+        fetch('getApplicantsCompare3Years.php', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ years })
+        })
+        .then(res => res.json())
+        .then(data => {
+          renderMainChart(data.faculties, data.datasets);
+        });
+      }
+
+      function renderMainChart(faculties, datasets) {
+        const ctx = document.getElementById('facultyBarChart').getContext('2d');
+        if (mainChart) mainChart.destroy();
+
+        mainChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: faculties,
+            datasets: datasets
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              title: {
+                display: true
+              },
+              legend: {
+                position: 'bottom'
+              },
+              tooltip: {
+                mode: 'index',
+                intersect: false
+              }
+            },
+            interaction: {
+              mode: 'index',
+              intersect: false
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'จำนวนผู้ยืนยันสิทธิ์'
+                }
+              },
+              x: {
+                title: {
+                  display: true,
+                  text: 'คณะ'
+                }
+              }
+            }
+          }
+        });
+      }
+
+      
+
+      // Load on start
+      fetchMainChart(yearSelect.value);
+      
+    </script>
+
+    <!-- Core JS -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/sidebarmenu.js"></script>
+    <script src="../assets/js/app.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </div>
+</body>
+</html>
+>>>>>>> 29b51cc (Test commit)

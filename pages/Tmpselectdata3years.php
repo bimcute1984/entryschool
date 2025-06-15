@@ -106,6 +106,7 @@ include "../pages/backend/connectDB.php";
       },
       dataType: 'json',
       success: function(response) {
+<<<<<<< HEAD
       // console.log(response);
       let rows = '';
       let i = 1;
@@ -120,6 +121,30 @@ include "../pages/backend/connectDB.php";
       // console.log(rows);
       
       },
+=======
+          let rows = '';
+          let i = 1;
+          let totalApplicants = 0; // ตัวแปรสำหรับรวมจำนวนทั้งหมด
+
+          response.forEach(row => {
+            rows += `<tr>
+                        <td style="width: 1rem;">${i++}</td>
+                        <td style="width: 20rem;">${row.FACULTYNAME}</td>
+                        <td style="width: 20rem;">${row.TOTAL_APPLICANTS}</td>
+                      </tr>`;
+            totalApplicants += parseInt(row.TOTAL_APPLICANTS); // บวกจำนวนคน
+          });
+
+          // เพิ่มแถวรวมด้านล่างสุด
+          rows += `<tr style="font-weight:bold; background-color:#f2f2f2;">
+                      <td colspan="2" style="text-align:right;">รวมทั้งหมด</td>
+                      <td>${totalApplicants}</td>
+                  </tr>`;
+
+          $('#data-table').html(rows);
+      }
+,
+>>>>>>> 29b51cc (Test commit)
       error: function (){
         Swal.fire({
           icon: 'error',
